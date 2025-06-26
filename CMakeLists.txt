@@ -13,7 +13,7 @@ add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
 
 # Create your game executable target as usual
-add_executable(colorkeying WIN32 colorkeying.cpp)
+add_executable(spriteClippingAndStretching WIN32 spriteClippingAndStretching.cpp)
 
 # Link to the actual SDL3 library.
-target_link_libraries(colorkeying PRIVATE SDL3_image::SDL3_image SDL3::SDL3)
+target_link_libraries(spriteClippingAndStretching PRIVATE SDL3_image::SDL3_image SDL3::SDL3)
