@@ -13,7 +13,7 @@ add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
 
 # Create your game executable target as usual
-add_executable(rotationAndFlipping WIN32 rotationAndFlipping.cpp)
+add_executable(colorModulationAndAlphaBlending WIN32 colorModulationAndAlphaBlending.cpp)
 
 # Link to the actual SDL3 library.
-target_link_libraries(rotationAndFlipping PRIVATE SDL3_image::SDL3_image SDL3::SDL3)
+target_link_libraries(colorModulationAndAlphaBlending PRIVATE SDL3_image::SDL3_image SDL3::SDL3)
