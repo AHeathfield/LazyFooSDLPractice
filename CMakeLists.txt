@@ -19,7 +19,7 @@ add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_ttf EXCLUDE_FROM_ALL)
 
 # Create your game executable target as usual
-add_executable(motion WIN32 motion.cpp)
+add_executable(animation WIN32 animation.cpp)
 
 # Link to the actual SDL3 library.
-target_link_libraries(motion PRIVATE SDL3_ttf::SDL3_ttf SDL3_image::SDL3_image SDL3::SDL3)
+target_link_libraries(animation PRIVATE SDL3_ttf::SDL3_ttf SDL3_image::SDL3_image SDL3::SDL3)
