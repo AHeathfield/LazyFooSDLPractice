@@ -19,7 +19,7 @@ add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_ttf EXCLUDE_FROM_ALL)
 
 # Create your game executable target as usual
-add_executable(mouseEvents WIN32 mouseEvents.cpp)
+add_executable(timing WIN32 timing.cpp)
 
 # Link to the actual SDL3 library.
-target_link_libraries(mouseEvents PRIVATE SDL3_ttf::SDL3_ttf SDL3_image::SDL3_image SDL3::SDL3)
+target_link_libraries(timing PRIVATE SDL3_ttf::SDL3_ttf SDL3_image::SDL3_image SDL3::SDL3)
